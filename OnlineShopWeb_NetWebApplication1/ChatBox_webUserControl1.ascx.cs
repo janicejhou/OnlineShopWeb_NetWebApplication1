@@ -11,12 +11,12 @@ namespace OnlineShopWeb_NetWebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = Session [ "CustomerName" ].ToString ();
+            
         }
 
         protected void button_send_Click ( object sender , EventArgs e )
         {
-            
+            Label1.Text = Session [ "CustomerName" ].ToString ();
         }
     }
 }

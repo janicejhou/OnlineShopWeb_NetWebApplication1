@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Shop_Home.aspx.cs" Inherits="OnlineShopWeb_NetWebApplication1.HomePage_WebForm" %>
 
 <%@ Register Src="~/ChatBox_webUserControl1.ascx" TagPrefix="uc1" TagName="ChatBox_webUserControl1" %>
+<%@ Register Src="~/ChatBox_WebUserControl2.ascx" TagPrefix="uc1" TagName="ChatBox_WebUserControl2" %>
+
 
 
 <!DOCTYPE html>
@@ -86,9 +88,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            
                 <asp:Button ID="women_btn" runat="server" Text="女裝" Font-Size="XX-Large" BackColor="White" BorderStyle="None" OnClick="women_btn_Click"  />
-                                              
         </div>
 
         <div class="row">
@@ -791,7 +791,7 @@
   <div id="preloader"></div>
 
     <!--Add ChatBox-->
-    <uc1:ChatBox_webUserControl1 runat="server" ID="ChatBox_webUserControl1" />
+        <uc1:ChatBox_WebUserControl2 runat="server" ID="ChatBox_WebUserControl2" />
         <!--Add ChatBox End-->
 
           <!-- Vendor JS Files -->

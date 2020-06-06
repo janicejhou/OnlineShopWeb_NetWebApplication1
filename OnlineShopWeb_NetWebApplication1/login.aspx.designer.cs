@@ -24,39 +24,30 @@ namespace OnlineShopWeb_NetWebApplication1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// User_name 控制項。
+        /// _UserName 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox User_name;
+        protected global::System.Web.UI.WebControls.TextBox _UserName;
 
         /// <summary>
-        /// password 控制項。
+        /// _Password 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.TextBox _Password;
 
         /// <summary>
-        /// log_in 控制項。
+        /// _logIn 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button log_in;
-
-        /// <summary>
-        /// Create_user 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Create_user;
+        protected global::System.Web.UI.WebControls.Button _logIn;
     }
 }

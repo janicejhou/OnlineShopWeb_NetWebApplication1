@@ -171,6 +171,7 @@
     <Content Include="assets\vendor\venobox\venobox.min.js" />
     <Content Include="assets\vendor\waypoints\jquery.waypoints.min.js" />
     <Content Include="ChatBox_WebForm1.aspx" />
+    <Content Include="ChatBox_WebUserControl2.ascx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -190,6 +191,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="font\classy.svg" />
     <Content Include="font\fontawesome-webfont.svg" />
+    <Content Include="ForgotPassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -346,12 +348,26 @@
     <Compile Include="ChatBox_WebForm1.aspx.designer.cs">
       <DependentUpon>ChatBox_WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChatBox_WebUserControl2.ascx.cs">
+      <DependentUpon>ChatBox_WebUserControl2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChatBox_WebUserControl2.ascx.designer.cs">
+      <DependentUpon>ChatBox_WebUserControl2.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

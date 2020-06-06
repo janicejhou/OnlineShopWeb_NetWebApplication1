@@ -69,12 +69,12 @@ namespace OnlineShopWeb_NetWebApplication1
         protected global::System.Web.UI.WebControls.Button baby_btn;
 
         /// <summary>
-        /// ChatBox_webUserControl1 控制項。
+        /// ChatBox_WebUserControl2 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::OnlineShopWeb_NetWebApplication1.WebUserControl1 ChatBox_webUserControl1;
+        protected global::OnlineShopWeb_NetWebApplication1.ChatBox_WebUserControl2 ChatBox_WebUserControl2;
     }
 }

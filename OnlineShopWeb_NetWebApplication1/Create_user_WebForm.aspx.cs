@@ -13,5 +13,10 @@ namespace OnlineShopWeb_NetWebApplication1
         {
 
         }
+
+        protected void _ReturnLogIn_Click ( object sender , EventArgs e )
+        {
+            Server.Transfer ("~/login.aspx");     // Transfer在轉到新頁面並執行完成新頁面的輸出後，就並【不會繼續】執行原頁面的後續程式碼。
+        }
     }
 }
