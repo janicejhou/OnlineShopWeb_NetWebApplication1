@@ -42,11 +42,11 @@
               <form id="form1" runat="server">
 
                 <div class="form-group">
-                    <asp:TextBox ID="_UserName" runat="server" class="form-control" placeholder="UserName" required="required"></asp:TextBox>
+                    <asp:TextBox ID="_EmailAdress" runat="server" class="form-control" placeholder="Email Adress" required="required"></asp:TextBox>
                     
                 </div>
                 <div class="form-group">
-                    <asp:TextBox ID="_Password" Type="password" runat="server" class="form-control" placeholder="Password" required="required"></asp:TextBox>
+                    <asp:TextBox ID="_Password" Type="password" runat="server" class="form-control" placeholder="Password" required="required" TextMode="Password"></asp:TextBox>
                     
                 </div>
                 <div class="form-group">
@@ -72,10 +72,8 @@
 </div>
 
         <!-- Bootstrap core JavaScript -->
-  <script src="/bootstrap-4.5.0-dist/js/jquery.slim.js"></script>
-  <script src="/bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/bootstrap-4.5.0-dist/js/jquery.slim.js"></script>
+        <script src="/bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
     </form>
-
-
 </body>
 </html>

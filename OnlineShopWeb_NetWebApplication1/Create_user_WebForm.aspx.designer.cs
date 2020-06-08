@@ -24,6 +24,15 @@ namespace OnlineShopWeb_NetWebApplication1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// _CreateCondition 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label _CreateCondition;
+
+        /// <summary>
         /// _UserName 控制項。
         /// </summary>
         /// <remarks>
@@ -33,13 +42,13 @@ namespace OnlineShopWeb_NetWebApplication1
         protected global::System.Web.UI.WebControls.TextBox _UserName;
 
         /// <summary>
-        /// _Email 控制項。
+        /// _EmailAdress 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox _Email;
+        protected global::System.Web.UI.WebControls.TextBox _EmailAdress;
 
         /// <summary>
         /// _Password 控制項。
@@ -94,5 +103,14 @@ namespace OnlineShopWeb_NetWebApplication1
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Register_Button1;
+
+        /// <summary>
+        /// SqlDataSource1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }
