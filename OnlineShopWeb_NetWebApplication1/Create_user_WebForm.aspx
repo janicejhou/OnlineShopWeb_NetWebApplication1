@@ -23,7 +23,6 @@
   * Author: https://startbootstrap.com/
   * License: https://startbootstrap.com/snippets/registration-page/
   ======================================================== -->
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -87,7 +86,6 @@
     </div>
   </div>
 
-        
             <!-- 新增 SqlDataSource 控制項與各控制項連接 -->
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:memberdataConnectionString %>" 
                  InsertCommand="INSERT INTO [MemberList] ([UserName], [EmailAddress], [Password], [ConfirmPassword], [Birthday], [HomeAddress], [PhoneNumber]) VALUES (@UserName, @EmailAddress, @Password, @ConfirmPassword, @Birthday, @HomeAddress, @PhoneNumber)" SelectCommand="SELECT * FROM [MemberList]" UpdateCommand="UPDATE [MemberList] SET [EmailAddress] = @EmailAddress, [Password] = @Password, [ConfirmPassword] = @ConfirmPassword, [Birthday] = @Birthday, [HomeAddress] = @HomeAddress, [PhoneNumber] = @PhoneNumber, [Rank] = @Rank WHERE [UserName] = @UserName" OnInserted="SqlDataSource1_Inserted">

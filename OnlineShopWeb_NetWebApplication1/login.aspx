@@ -26,8 +26,7 @@
    
 </head>
 <body>
-    <form>
-        <div class="container-fluid">
+ <div class="container-fluid">
   <div class="row no-gutter">
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
     <div class="col-md-8 col-lg-6">
@@ -37,24 +36,21 @@
             <div class="col-md-9 col-lg-8 mx-auto">
               <h2 class="login-heading mb-4" style="font-weight:bold;">歡迎來到 Net.net 衣服購物網</h2>
                 <br/>
-                <br/>
-                <h3 class="login-heading mb-4"> 會員登入 / Log In </h3>
-              <form id="form1" runat="server">
 
+                <form id="form1" runat="server">
+                <h3 class="login-heading mb-4"> 會員登入 / Log In </h3> <h5 class="login-heading mb-4"><asp:Label ID="_LoginCondition" runat="server" ForeColor="Blue"></asp:Label></h5>
+              
                 <div class="form-group">
-                    <asp:TextBox ID="_EmailAdress" runat="server" class="form-control" placeholder="Email Adress" required="required"></asp:TextBox>
-                    
+                    <asp:TextBox ID="_EmailAddress" runat="server" class="form-control" placeholder="Email Address" required ="required" ></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <asp:TextBox ID="_Password" Type="password" runat="server" class="form-control" placeholder="Password" required="required" TextMode="Password"></asp:TextBox>
-                    
                 </div>
                 <div class="form-group">
                     <asp:Button ID="_logIn" runat="server" type="submit" class="btn btn-primary btn-block" Text="Log in" OnClick="log_in_Click" />
-                    
                 </div>
                 <div class="clearfix">
-                    <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+                    <label class="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
                 </div>        
 
                 <p class="text-center">
@@ -62,7 +58,7 @@
                     <br />
                     <asp:HyperLink NavigateUrl="~/Create_user_WebForm.aspx" runat="server" Text="．新手加入 / Create a account !" />
                 </p>
-              </form>
+             </form>
             </div>
           </div>
         </div>
@@ -74,6 +70,6 @@
         <!-- Bootstrap core JavaScript -->
         <script src="/bootstrap-4.5.0-dist/js/jquery.slim.js"></script>
         <script src="/bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
-    </form>
+     
 </body>
 </html>

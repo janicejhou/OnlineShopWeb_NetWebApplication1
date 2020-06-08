@@ -791,7 +791,7 @@
   <div id="preloader"></div>
 
     <!--Add ChatBox-->
-        <uc1:ChatBox_WebUserControl2 runat="server" ID="ChatBox_WebUserControl2" />
+        <uc1:ChatBox_webUserControl1 runat="server" ID="ChatBox_webUserControl1" />
         <!--Add ChatBox End-->
 
           <!-- Vendor JS Files -->

@@ -232,6 +232,7 @@
     <Content Include="font\fontawesome-webfont.woff2" />
     <Content Include="font\FontAwesome.otf" />
     <Content Include="ChatBox_webUserControl1.ascx" />
+    <Content Include="WebForm1.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="img\bg-img\bg-1.jpg" />
     <Content Include="img\bg-img\bg-2.jpg" />
@@ -429,6 +430,13 @@
     </Compile>
     <Compile Include="ChatBox_webUserControl1.ascx.designer.cs">
       <DependentUpon>ChatBox_webUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

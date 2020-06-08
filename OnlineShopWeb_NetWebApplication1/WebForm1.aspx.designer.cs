@@ -11,7 +11,7 @@ namespace OnlineShopWeb_NetWebApplication1
 {
 
 
-    public partial class login
+    public partial class WebForm1
     {
 
         /// <summary>
@@ -24,39 +24,30 @@ namespace OnlineShopWeb_NetWebApplication1
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// _LoginCondition 控制項。
+        /// TextBox1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label _LoginCondition;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
-        /// _EmailAddress 控制項。
+        /// Button1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox _EmailAddress;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// _Password 控制項。
+        /// Label1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox _Password;
-
-        /// <summary>
-        /// _logIn 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button _logIn;
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }
