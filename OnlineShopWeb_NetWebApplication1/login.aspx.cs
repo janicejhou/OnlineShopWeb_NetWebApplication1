@@ -21,6 +21,7 @@ namespace OnlineShopWeb_NetWebApplication1
         }
         protected void log_in_Click(object sender, EventArgs e)
         {
+            // 測試與連接購物車主頁
             /*if ( _EmailAddress.Text == "User" )
             {
                 Session [ "CustomerName" ] = _EmailAddress.Text;

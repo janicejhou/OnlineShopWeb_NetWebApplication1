@@ -49,11 +49,11 @@
                 </div>
 
                 <div class="form-group">
-                    <asp:TextBox ID="_Password" input type="text|password" name="_Password" value="" runat="server" class="form-control" placeholder="Password" required="required" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="_Password" input type="text|password" name="_Password" value="" runat="server" class="form-control" placeholder="Password" required="required"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
-                    <asp:TextBox  ID="_ConfirmPassword" input type="text | password" name="_ConfirmPassword" value="" runat="server" class="form-control" placeholder="Confirm Password" required="required" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox  ID="_ConfirmPassword" input type="text | password" name="_ConfirmPassword" value="" runat="server" class="form-control" placeholder="Confirm Password" required="required"></asp:TextBox>
                 </div>
 
                 <div class="form-group">

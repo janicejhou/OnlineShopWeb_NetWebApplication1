@@ -38,13 +38,13 @@
                 <br/>
 
                 <form id="form1" runat="server">
-                <h3 class="login-heading mb-4"> 會員登入 / Log In </h3> <h5 class="login-heading mb-4"><asp:Label ID="_LoginCondition" runat="server" ForeColor="Blue"></asp:Label></h5>
+                <h3 class="login-heading mb-4"> 會員登入 / Log In </h3> <h5 class="login-heading mb-4"><asp:Label ID="_LoginCondition" runat="server" ForeColor="Red"></asp:Label></h5>
               
                 <div class="form-group">
                     <asp:TextBox ID="_EmailAddress" runat="server" class="form-control" placeholder="Email Address" required ="required" ></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <asp:TextBox ID="_Password" Type="password" runat="server" class="form-control" placeholder="Password" required="required" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="_Password" Type="password" runat="server" class="form-control" placeholder="Password" required="required"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <asp:Button ID="_logIn" runat="server" type="submit" class="btn btn-primary btn-block" Text="Log in" OnClick="log_in_Click" />
