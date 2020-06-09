@@ -24,8 +24,8 @@ namespace OnlineShopWeb_NetWebApplication1
         {
             // 驗證 Email Address & Birthday 格式 是否正確
             string isValidEmail = _EmailAdress.Text;
-            string isValidBirthday = _Birthday.Text;
-            IsValidParamete (isValidEmail , isValidBirthday);
+
+            IsValidParamete (isValidEmail );
 
             // 若傳回true，則將資料傳到資料庫
             if( true )
@@ -40,10 +40,10 @@ namespace OnlineShopWeb_NetWebApplication1
             _CreateCondition.Text = "Register Sucessful !!";  // 透過 Label 控制項顯示 資料是否已經存入至資料庫中
         }
 
-        public bool IsValidParamete ( string isValidEmail, string isValidBirthday )
+        public bool IsValidParamete ( string isValidEmail)
         {
             
-            if (string.IsNullOrWhiteSpace(isValidEmail) || string.IsNullOrWhiteSpace(isValidBirthday) )  // 判斷 輸入是否為空值
+            if (string.IsNullOrWhiteSpace(isValidEmail))  // 判斷 輸入是否為空值
             {
                 _CreateCondition.Text = "未輸入信箱或生日！";
                 return false;
@@ -52,9 +52,6 @@ namespace OnlineShopWeb_NetWebApplication1
             {
                 _CreateCondition.Text = "EmailAddres 信箱格式不正確！";
                 return false;
-            }else if (!Regex.IsMatch(isValidBirthday,@"^(19|20)\d\d[\v.]([])"))
-            {
-                _CreateCondition.Text = "Birthday 生日格式不正確！";
             }
             return true;
         }

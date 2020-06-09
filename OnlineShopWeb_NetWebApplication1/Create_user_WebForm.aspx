@@ -40,8 +40,15 @@
               <h4 class="card-title text-center"><asp:Label ID="_CreateCondition" runat="server" BackColor="White" ForeColor="Blue"></asp:Label></h4>
 
               <!-- TextBox 各控制項 使用者輸入參數 -->
+
+              <div class="form-group">
+                  <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="84px">
+                      <asp:ListItem Value="M">Male</asp:ListItem> <asp:ListItem Value="W">Female</asp:ListItem>
+                  </asp:RadioButtonList>
+                </div>
+
                 <div class="form-group">
-                    <asp:TextBox ID="_UserName" input type="text" name="_UserName" value="" runat="server" class="form-control" placeholder="Username" required="required"></asp:TextBox>
+                    <asp:TextBox ID="_UserRealName" input type="text" name="_UserRealName" value="" runat="server" class="form-control" placeholder="Username" required="required"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
@@ -54,10 +61,6 @@
 
                 <div class="form-group">
                     <asp:TextBox  ID="_ConfirmPassword" input type="text | password" name="_ConfirmPassword" value="" runat="server" class="form-control" placeholder="Confirm Password" required="required"></asp:TextBox>
-                </div>
-
-                <div class="form-group">
-                    <asp:TextBox  ID="_Birthday" input type="text" name="_Birthday" value="" runat="server" class="form-control" placeholder="Birthday (YYYY/MM/DD)" required="required"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
@@ -88,13 +91,12 @@
 
             <!-- 新增 SqlDataSource 控制項與各控制項連接 -->
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:memberdataConnectionString %>" 
-                 InsertCommand="INSERT INTO [MemberList] ([UserName], [EmailAddress], [Password], [ConfirmPassword], [Birthday], [HomeAddress], [PhoneNumber]) VALUES (@UserName, @EmailAddress, @Password, @ConfirmPassword, @Birthday, @HomeAddress, @PhoneNumber)" SelectCommand="SELECT * FROM [MemberList]" UpdateCommand="UPDATE [MemberList] SET [EmailAddress] = @EmailAddress, [Password] = @Password, [ConfirmPassword] = @ConfirmPassword, [Birthday] = @Birthday, [HomeAddress] = @HomeAddress, [PhoneNumber] = @PhoneNumber, [Rank] = @Rank WHERE [UserName] = @UserName" OnInserted="SqlDataSource1_Inserted">
+                 InsertCommand="INSERT INTO [MemberList] ([UserName], [EmailAddress], [Password], [ConfirmPassword], [HomeAddress], [PhoneNumber]) VALUES (@UserName, @EmailAddress, @Password, @ConfirmPassword, @Birthday, @HomeAddress, @PhoneNumber)" SelectCommand="SELECT * FROM [MemberList]" UpdateCommand="UPDATE [MemberList] SET [EmailAddress] = @EmailAddress, [Password] = @Password, [ConfirmPassword] = @ConfirmPassword, [Birthday] = @Birthday, [HomeAddress] = @HomeAddress, [PhoneNumber] = @PhoneNumber, [Rank] = @Rank WHERE [UserName] = @UserName" OnInserted="SqlDataSource1_Inserted">
                 <InsertParameters>
                     <asp:ControlParameter ControlID="_UserName" Name="UserName" PropertyName="Text" Type="String" />
                     <asp:ControlParameter ControlID="_EmailAdress" Name="EmailAddress" PropertyName="Text" Type="String" />
                     <asp:ControlParameter ControlID="_Password" Name="Password" PropertyName="Text" Type="String" />
                     <asp:ControlParameter ControlID="_ConfirmPassword" Name="ConfirmPassword" PropertyName="Text" Type="String" />
-                    <asp:ControlParameter ControlID="_Birthday" Name="Birthday" PropertyName="Text" Type="String" />
                     <asp:ControlParameter ControlID="_HomeAddress" Name="HomeAddress" PropertyName="Text" Type="String" />
                     <asp:ControlParameter ControlID="_PhoneNumber" Name="PhoneNumber" PropertyName="Text" Type="String" />
                 </InsertParameters>

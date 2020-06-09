@@ -33,13 +33,22 @@ namespace OnlineShopWeb_NetWebApplication1
         protected global::System.Web.UI.WebControls.Label _CreateCondition;
 
         /// <summary>
-        /// _UserName 控制項。
+        /// RadioButtonList1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox _UserName;
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
+
+        /// <summary>
+        /// _UserRealName 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox _UserRealName;
 
         /// <summary>
         /// _EmailAdress 控制項。
@@ -67,15 +76,6 @@ namespace OnlineShopWeb_NetWebApplication1
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox _ConfirmPassword;
-
-        /// <summary>
-        /// _Birthday 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox _Birthday;
 
         /// <summary>
         /// _HomeAddress 控制項。
