@@ -12,6 +12,7 @@ namespace OnlineShopWeb_NetWebApplication1
 {
     public partial class login : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if ( IsPostBack )
@@ -47,9 +48,8 @@ namespace OnlineShopWeb_NetWebApplication1
         {
             SqlConnection Connection = new SqlConnection ();
             Connection.ConnectionString = WebConfigurationManager.ConnectionStrings [ "memberdataConnectionString" ].ConnectionString; // 連結資料庫
-           
-            SqlDataReader dr = null;
 
+            SqlDataReader dr = null;
             // 使用參數 寫法，避免 SQL Injection 攻擊
             SqlCommand cmd = new SqlCommand ("select * from MemberList where EmailAddress = @email and Password = @passwd", Connection);
             cmd.Parameters.AddWithValue ("@email",_EmailAddress.Text);  // 參數寫法 Email
